@@ -4,7 +4,11 @@ Build a Chat App with NEW ChatGPT API | Full stack, React, Redux Toolkit, Node, 
 Video: https://www.youtube.com/watch?v=ffEDkqfIzxM
 
 ## Ai naming
-Make sure to add an AI chat that begins with either `Ai_`, `AiAssist_`, or `AiCode_` to use ChatGPT features, and add the AI bot `AI_bot-Joey` to the chat window
+Make sure to add an AI chat that begins with either:
+- `Ai_` - Ask ChatGPT anything, see where it takes you
+- `AiAssist_` - ChatGPT Auto-Complete Assist, or
+- `AiCode_` - Coding Assistant
+to use ChatGPT features, and add the AI bot `AI_bot-Joey` to the chat window
 
 ## Demo
 
