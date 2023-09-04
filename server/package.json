@@ -1,27 +1,33 @@
 {
-  "name": "server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
+  "name": "strapi-ecommerce",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "axios": "^1.3.3",
-    "body-parser": "^1.20.1",
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "helmet": "^6.0.1",
-    "morgan": "^1.10.0",
-    "openai": "^3.2.1"
+    "@strapi/plugin-i18n": "latest",
+    "@strapi/plugin-users-permissions": "latest",
+    "@strapi/strapi": "latest",
+    "better-sqlite3": "^7.4.6",
+    "stripe": "latest"
   },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "dbf8fb02-b0a7-4358-be31-b9bad772b341"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT",
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "@flydotio/dockerfile": "^0.4.8"
   }
 }

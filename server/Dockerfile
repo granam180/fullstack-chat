@@ -21,14 +21,14 @@ RUN apt-get update -qq && \
     apt-get install -y python-is-python3 pkg-config build-essential 
 
 # Install node modules
-COPY --link package.json package-lock.json ./
-RUN npm install --production=false
+COPY --link package.json yarn.lock ./
+RUN yarn --production=false
 
 # Copy application code
 COPY --link . .
 
 # Remove development dependencies
-RUN npm prune --production
+RUN yarn add prune --production
 
 
 # Final stage for app image
